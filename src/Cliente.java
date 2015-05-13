@@ -23,7 +23,7 @@ public class Cliente extends  Thread{
 		
 	while(true){
 		try {
-		    Thread.sleep(Tiempo);
+		    Thread.sleep(Tiempo*1000);
 			Socket s=new Socket(Ip,Puerto);
 			PrintWriter out = new PrintWriter(s.getOutputStream(),true);	
 			out.println(Mensage);

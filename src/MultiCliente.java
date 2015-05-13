@@ -5,8 +5,8 @@ public class MultiCliente {
 		// TODO Auto-generated method stub
 System.out.println(" MULTICLIENTE ON LINE");
 
-  int Tiempo = 1000;
-  int NumCliente=10;
+  int Tiempo = 30;
+  int NumCliente=500;
   int Puerto=9002;
   String Ip="localhost";
   String Mensage="";
@@ -14,7 +14,7 @@ System.out.println(" MULTICLIENTE ON LINE");
   int randomNum =0;
   
   for(int i=1;i<=NumCliente;i++){
-	  randomNum = 0 + (int)(Math.random()*2);
+	  randomNum = 1 + (int)(Math.random()*100);
 	 try {
 		Thread.sleep(i*randomNum);
 		  System.out.println(" randomNum: "+randomNum);
