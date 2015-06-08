@@ -6,6 +6,8 @@ import java.net.Socket;
 public class Cliente extends  Thread{
 	int Puerto,IdCliente;
 	int Tiempo;
+	
+	
 	String Ip,Mensage;
 	
 	public Cliente(String Ip,int IdCliente,String Mensage,int Puerto,int Tiempo){
