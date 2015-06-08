@@ -5,8 +5,8 @@ public class MultiCliente {
 		// TODO Auto-generated method stub
 System.out.println(" MULTICLIENTE ON LINE");
 
-  int Tiempo = 30;
-  int NumCliente=500;
+  int Tiempo = 15;
+  int NumCliente=46;
   int Puerto=9002;
   String Ip="localhost";
   String Mensage="";
