@@ -7,7 +7,7 @@ System.out.println(" MULTICLIENTE generando Clientes");
 
   int Tiempo = 15;
   int NumCliente=40;
-  int Puerto=9002;
+  int Puerto=9002; 
   String Ip="localhost";
   String Mensage="";
   Cliente c;
