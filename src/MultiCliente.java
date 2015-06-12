@@ -1,16 +1,27 @@
 
-public class MultiCliente {
+public class MultiCliente extends Thread{
 
-	public static void main(String[] args) {
+	static Ventanaclientes ventana;
+
+	  int Tiempo = 15;
+	  int NumCliente=40;
+	  int Puerto=9002; 
+	  String Ip="localhost";
+	  String Mensage="";
+	  Cliente c;
+
+	public MultiCliente(int Tiempo,int NumCliente){
+	
+		this.NumCliente=NumCliente;
+		this.Tiempo=Tiempo;
+		
+		
+	}
+	
+	public void run(){	
 		// TODO Auto-generated method stub
 System.out.println(" MULTICLIENTE generando Clientes");
 
-  int Tiempo = 15;
-  int NumCliente=40;
-  int Puerto=9002; 
-  String Ip="localhost";
-  String Mensage="";
-  Cliente c;
   int randomNum =0;
   int i;
   for(i=1;i<=NumCliente;i++){
@@ -25,7 +36,7 @@ System.out.println(" MULTICLIENTE generando Clientes");
 	}
 	//  System.out.println(" Cliente N°:"+i+" creado");
 	  Mensage=" "+i+" 1";
-	  c=new Cliente(Ip, i, Mensage, Puerto, Tiempo);
+	  c=new Cliente(Ip, i, Mensage, Puerto, Tiempo,true);
 	 c.start();
 	
   }
