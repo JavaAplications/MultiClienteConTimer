@@ -87,10 +87,15 @@ public class Ventanaclientes extends JFrame {
 					btn_start.setText("Detener");
 					MultiCliente multiclient=new MultiCliente(Tiempo,NumClientes);
 					multiclient.start();
+					editNumClientes.setEnabled(false);
+					editTimerClientes.setEnabled(false);
 				
 				}else{
 					btn_start.setText("Iniciar");
 					Cliente.boolClientes=false;
+					editNumClientes.setEnabled(true);
+					editTimerClientes.setEnabled(true);
+				
 					}
 				
 			}
